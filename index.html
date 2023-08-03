@@ -3,39 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.css" />
     <title>ARTSHOES</title>
   </head>
   <body>
-    <header>
-      <h1><a href="#">ARTSHOES</a></h1>
-      <nav>
-        <ul class="nav__links">
-          <li>
-            <a href="#">Em Destaque</a>
-          </li>
-          <li>
-            <a href="#">Promoções</a>
-          </li>
-          <li>
-            <a href="#">Sobre</a>
-          </li>
-          <li>
-            <a href="#">Contato</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="cta" href="#"><button>Carrinho</button></a>
-    </header>
+    <div class="container">
+      <header>
+        <h1><a href="#">ARTSHOES</a></h1>
+        <nav>
+          <ul class="nav__links">
+            <li>
+              <a href="#">Em Destaque</a>
+            </li>
+            <li>
+              <a href="#">Promoções</a>
+            </li>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#"><button>Carrinho</button></a>
+      </header>
+    </div>
 
-    <section id="sobre_loja">
-      <div class="container-flex">
+    <section id="sobre-a-loja">
+      <div class="container container__flex">
         <img
           src="https://via.placeholder.com/400x400"
           alt="Imagem de calcados na parede"
         />
         <div>
-          <h2>Sobre ART Shoes</h2>
+          <h2>Sobre <span class="palavra__destaque">ARTSHOES</span></h2>
+          <div class="linha"></div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
             dicta voluptate ipsum eaque perspiciatis alias est, molestiae
@@ -54,11 +63,12 @@
 
     <section>
       <div class="container">
-        <h2>Produtos em destaque</h2>
-        <ul class="container-flex">
+        <h2>Produtos em <span class="palavra__destaque">destaque</span></h2>
+        <div class="linha"></div>
+        <ul class="container__flex lista__produtos">
           <li>
             <img
-              src="https://via.placeholder.com/240x240"
+              src="https://via.placeholder.com/300x300"
               alt="Imagem de sapato preto e branco"
             />
             <h3>Tenis Nike Modelo XXI</h3>
@@ -67,11 +77,22 @@
               <strong>R$ 149,90</strong>
             </div>
             <button type="button">Adicionar ao carrinho</button>
-            <button type="button">Comprar com 1-click</button>
+          </li>
+          <li class="item__central">
+            <img
+              src="https://via.placeholder.com/300x300"
+              alt="Imagem de sapato preto e branco"
+            />
+            <h3>Tenis Nike Modelo XXI</h3>
+            <p>Tenis Nike para amantes do esporte. Com tamanhos variados.</p>
+            <div class="price">
+              <strong>R$ 149,90</strong>
+            </div>
+            <button type="button">Adicionar ao carrinho</button>
           </li>
           <li>
             <img
-              src="https://via.placeholder.com/240x240"
+              src="https://via.placeholder.com/300x300"
               alt="Imagem de sapato preto e branco"
             />
             <h3>Tenis Nike Modelo XXI</h3>
@@ -80,11 +101,10 @@
               <strong>R$ 149,90</strong>
             </div>
             <button type="button">Adicionar ao carrinho</button>
-            <button type="button">Comprar com 1-click</button>
           </li>
           <li>
             <img
-              src="https://via.placeholder.com/240x240"
+              src="https://via.placeholder.com/300x300"
               alt="Imagem de sapato preto e branco"
             />
             <h3>Tenis Nike Modelo XXI</h3>
@@ -93,23 +113,32 @@
               <strong>R$ 149,90</strong>
             </div>
             <button type="button">Adicionar ao carrinho</button>
-            <button type="button">Comprar com 1-click</button>
-          </li>
-          <li>
-            <img
-              src="https://via.placeholder.com/240x240"
-              alt="Imagem de sapato preto e branco"
-            />
-            <h3>Tenis Nike Modelo XXI</h3>
-            <p>Tenis Nike para amantes do esporte. Com tamanhos variados.</p>
-            <div class="price">
-              <strong>R$ 149,90</strong>
-            </div>
-            <button type="button">Adicionar ao carrinho</button>
-            <button type="button">Comprar com 1-click</button>
           </li>
         </ul>
       </div>
     </section>
+
+    <footer>
+      <div class="container container__flex">
+        <p>2023 &copy; ARTSHOES - Todos os direitos reservados.</p>
+        <ul class="container__flex">
+          <li>
+            <a href="#">
+              <img src="./icon/facebook.png" alt="Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./icon/instagram.png" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./icon/youtube.png" alt="YouTube" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
