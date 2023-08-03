@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +9,7 @@
 
 header > h1 > a {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 48px;
   cursor: pointer;
 }
 
@@ -19,21 +17,27 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 li,
 a,
 p,
 button {
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 16px;
-  color: antiquewhite;
+  /* color: antiquewhite; */
   text-decoration: none;
 }
 
-.nav__links {
+li {
   list-style: none;
+  justify-content: center;
 }
 
 .nav__links li {
@@ -51,11 +55,10 @@ button {
 }
 
 button {
-  margin-left: 20px;
   padding: 9px 25px;
   background-color: rgb(255, 99, 71, 1);
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -64,12 +67,79 @@ button:hover {
   background-color: rgb(255, 99, 71, 0.8);
 }
 
-/* 
-Cor primária: #333333 (cinza escuro)
-Cor secundária: #FFFFFF (branco)
-Destaque: #FF6347 (coral)
-Essa combinação cria uma aparência sofisticada e 
-elegante, com o cinza escuro como cor de fundo, o
-branco para o texto e os detalhes e o coral como
-destaque para botões e elementos importantes.
- */
+.linha {
+  border-bottom: 1px solid tomato;
+  background-color: tomato;
+  margin-bottom: 36px;
+}
+
+.palavra__destaque {
+  font-weight: 900;
+}
+
+.lista__produtos ul li {
+  width: 100%;
+  margin: 0 3%;
+}
+
+section {
+  padding: 48px 0;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 32px;
+}
+
+#sobre-a-loja p {
+  margin-bottom: 12px;
+}
+
+.container__flex {
+  display: flex;
+}
+
+#sobre-a-loja img {
+  max-width: 400px;
+  margin-right: 24px;
+}
+
+.lista__produtos {
+  flex-wrap: wrap;
+}
+
+.lista__produtos li {
+  max-width: 30%;
+  margin-bottom: 48px;
+}
+
+.lista__produtos li:nth-child(3n + 2) {
+  margin: 0 5%;
+}
+
+.lista__produtos li img {
+  width: 100%;
+}
+
+.lista__produtos li h3,
+.price {
+  margin: 10px 0;
+}
+.lista__produtos button {
+  width: 100%;
+}
+
+footer > .container {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+footer li {
+  list-style: none;
+  margin-left: 16px;
+}
+
+footer li img {
+  height: 32px;
+}
