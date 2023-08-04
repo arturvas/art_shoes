@@ -160,3 +160,77 @@ footer li img {
   height: 32px;
   border-radius: 7px;
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    padding-top: 15px;
+  }
+
+  .btn__menu,
+  .btn__carrinho {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .btn__menu button,
+  .btn__carrinho button {
+    padding: 16px;
+    background-color: transparent;
+    border: 2px solid sandybrown;
+    border-radius: 10px;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__links {
+    margin: 10px 0;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .lista__produtos {
+    grid-template-columns: 1fr;
+  }
+
+  .lista__produtos li {
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .btn__menu {
+    display: none;
+  }
+
+  #sobre-a-loja img {
+  }
+}
