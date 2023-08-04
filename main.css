@@ -129,10 +129,33 @@ h2 {
   width: 100%;
 }
 
+.price {
+  font-size: 26px;
+  margin: 16px 0;
+  display: block;
+}
+.price strong {
+  color: tomato;
+  margin-left: 10px;
+}
+
+.price del {
+  color: lightslategray;
+  font-size: 18px;
+}
+
 footer > .container {
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 16px;
+  padding: 16px 0;
+}
+
+footer .container,
+footer,
+footer p,
+footer ul,
+footer a {
+  background-color: #212121;
 }
 
 footer li {
@@ -142,4 +165,5 @@ footer li {
 
 footer li img {
   height: 32px;
+  border-radius: 7px;
 }
