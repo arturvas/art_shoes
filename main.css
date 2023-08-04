@@ -35,7 +35,6 @@ button {
 
 li {
   list-style: none;
-  /* justify-content: center; */
 }
 
 .nav__links li {
@@ -74,11 +73,6 @@ button:hover {
 .palavra__destaque {
   font-weight: 900;
 }
-/* 
-.lista__produtos ul li {
-  width: 100%;
-  margin: 0 3%;
-} */
 
 section {
   margin-bottom: 10%;
@@ -104,10 +98,8 @@ h2 {
 }
 
 .lista__produtos {
-  /* flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* margin: -2%; */
 }
 
 .lista__produtos li {
@@ -117,15 +109,6 @@ h2 {
 .lista__produtos li:last-child {
   margin-right: 0;
 }
-
-/* .lista__produtos li {
-  max-width: 30%;
-  margin-bottom: 48px;
-} */
-
-/* .lista__produtos li:nth-child(3n + 2) {
-  margin: 0 5%;
-} */
 
 .lista__produtos li img {
   width: 100%;
@@ -138,10 +121,6 @@ h2 {
 .lista__produtos button {
   width: 100%;
 }
-
-/* .grid__container {
-  display: grid;
-} */
 
 .price {
   font-size: 26px;
