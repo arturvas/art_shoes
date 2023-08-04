@@ -16,6 +16,9 @@
     <div class="container">
       <header>
         <h1><a href="#">ARTSHOES</a></h1>
+        <div class="btn__menu">
+          <button type="button">Menu</button>
+        </div>
         <nav>
           <ul class="nav__links">
             <li>
@@ -32,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <a href="#"><button>Carrinho</button></a>
+        <a class="btn__carrinho" href="#"><button>Carrinho</button></a>
       </header>
     </div>
 
@@ -42,7 +45,7 @@
           src="/images/sobre-a-loja-baner.jpg"
           alt="Imagem de calcados na parede"
         />
-        <div>
+        <div id="sobre-a-loja">
           <h2>Sobre <span class="palavra__destaque">ARTSHOES</span></h2>
           <div class="linha"></div>
           <p>
@@ -165,4 +168,17 @@
       </div>
     </footer>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      // $(".nav__links").hide();
+      $(".btn__menu button").click(function () {
+        $(".nav__links").slideToggle();
+      });
+    });
+  </script>
 </html>
